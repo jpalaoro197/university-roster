@@ -11,6 +11,16 @@ namespace UniversityRoster.Controllers
   {
     private readonly UniversityRosterContext _db;
 
+    public StudentsController(UniversityRosterContext db)
+    {
+      _db = db;
+    }
+
+    public ActionResult Index()
+    {
+      return View(_db.Students.UniversityRoster());
+    }
+
    
   }
 }
