@@ -5,10 +5,10 @@ using System.IO;
 
 namespace UniversityRoster.Models
 {
-  public class ToDoListContextFactory : IDesignTimeDbContextFactory<UniversityRosterContext>
+  public class UniversityRosterContextFactory : IDesignTimeDbContextFactory<UniversityRosterContext>
   {
 
-    ToDoListContext IDesignTimeDbContextFactory<UniversityRosterContext>.CreateDbContext(string[] args)
+    UniversityRosterContext IDesignTimeDbContextFactory<UniversityRosterContext>.CreateDbContext(string[] args)
     {
       IConfigurationRoot configuration = new ConfigurationBuilder()
           .SetBasePath(Directory.GetCurrentDirectory())
