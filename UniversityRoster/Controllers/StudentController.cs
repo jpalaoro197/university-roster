@@ -18,7 +18,7 @@ namespace UniversityRoster.Controllers
 
     public ActionResult Index()
     {
-      return View(_db.Students.UniversityRoster());
+      return View(_db.Students.ToList());
     }
 
     public ActionResult Create()

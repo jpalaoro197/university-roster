@@ -11,8 +11,8 @@ namespace UniversityRoster.Models
 
         public int CourseId { get; set; }
         public string Class { get; set; }
-        public string Num { get; set; }
-        public virtual ICollection<CategoryItem> JoinEntities { get; set; }
+        
+        public virtual ICollection<CourseStudent> JoinEntities { get; set; }
 
     }
 }

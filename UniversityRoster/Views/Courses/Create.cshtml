@@ -2,13 +2,13 @@
   Layout = "_Layout";
 }
 
-@model UniversityRoster.Models.Student
+@model UniversityRoster.Models.Course
 
 <h4>Add a new course</h4>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.Class)
+  @Html.TextBoxFor(model => model.Class)
   <input type="submit" value="Add new student" />
 }
 <p>@Html.ActionLink("Show all categories", "Index")</p>
